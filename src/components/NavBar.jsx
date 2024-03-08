@@ -25,7 +25,7 @@ function NavBar() {
           return (
             <div className="px-4" key={index}>
               <p
-                className={`text-text text-lg hover:text-primary cursor-pointer active:opacity-70 ${handleSelected(
+                className={`text-text lg:text-lg xl:text-3xl hover:text-primary cursor-pointer active:opacity-70 ${handleSelected(
                   index
                 )}`}
                 onClick={() => setSelected(index)}
@@ -37,7 +37,7 @@ function NavBar() {
         })}
       </div>
       <div>
-        <h2 className="border-text border-2 p-2 text-xl text-text hover:text-primary hover:border-primary cursor-pointer active:opacity-70">
+        <h2 className="border-text border-2 p-2 lg:text-lg xl:text-2xl text-text hover:text-primary hover:border-primary cursor-pointer active:opacity-70">
           CONTACT ME!
         </h2>
       </div>

@@ -23,6 +23,11 @@ export default {
         accent: "#6ae821",
         black: "#000000",
       },
+      fontSize: {
+        "body-lg": "1.125rem",
+        "body-sm": "0.875rem",
+        "body-xl": "3rem",
+      },
     },
   },
   plugins: [],
