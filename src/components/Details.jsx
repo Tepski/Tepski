@@ -36,7 +36,7 @@ function Details() {
           <div className="lg:text-sm xl:text-xl sm:text-xs">
             <p className="italic text-white opacity-70">Mechanical Engineer</p>
             <p className="italic text-white opacity-70">Developer</p>
-            <div className="sm:my-3 md:my-10 flex flex-row items-center xl:text-xl lg:text-base sm:text-xs md:text-2xl 2xl:text-5xl">
+            <div className="sm:my-3 md:my-5 xl:my-10 flex flex-row items-center xl:text-xl lg:text-base sm:text-xs md:text-xs 2xl:text-5xl">
               <p className="bg-primary xl:p-2 sm:p-2 mr-5 cursor-pointer active:opacity-70">
                 HIRE ME
               </p>
@@ -54,9 +54,9 @@ function Details() {
           </p>
         </div>
         <div className="flex flex-row justify-around lg:text-3xl xl:text-4xl">
-          <FaFacebook className="hover:cursor-pointer text-black hover:text-accent active:opacity-70 xl:mx-3 sm:ms-1" />
-          <FaTwitter className="hover:cursor-pointer text-black hover:text-accent active:opacity-70 xl:mx-3 sm:ms-1" />
-          <FaGithub className="hover:cursor-pointer text-black hover:text-accent active:opacity-70 xl:mx-3 sm:ms-1" />
+          <FaFacebook className="hover:cursor-pointer text-black hover:text-accent active:opacity-70 xl:mx-3 md:mx-2 sm:ms-1" />
+          <FaTwitter className="hover:cursor-pointer text-black hover:text-accent active:opacity-70 xl:mx-3 md:mx-2 sm:ms-1" />
+          <FaGithub className="hover:cursor-pointer text-black hover:text-accent active:opacity-70 xl:mx-3 md:mx-2 sm:ms-1" />
         </div>
       </div>
     </div>
