@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <div className="flex justify-center flex-row items-center h-screen bg-gradient-to-tr from-background to-blue-950">
+      <div className="flex justify-center flex-row items-center h-screen bg-gradient-to-trs bg-background from-background to-blue-950">
         {WinWidth <= 700 || WinHeight > WinWidth ? (
           <MobileNavBar />
         ) : (
