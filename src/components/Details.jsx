@@ -20,7 +20,7 @@ function Details() {
     <div className="w-1/2 flex justify-center items-center flex-col relative">
       <div className="w-full h-[75%] py-20 ps-20 text-4xl font-extrabold text-white flex justify-center items-center flex-col z-10">
         <div>
-          <div className="py-3 lg:text-5xl xl:text-7xl sm:text-lg md:text-xl">
+          <div className="py-3 lg:text-3xl xl:text-5xl sm:text-lg md:text-xl">
             <p>
               HI<span className="text-primary">!</span> I am
             </p>
@@ -33,11 +33,11 @@ function Details() {
               </span>
             </p>
           </div>
-          <div className="lg:text-xl xl:text-2xl sm:text-xs">
+          <div className="lg:text-sm xl:text-xl sm:text-xs">
             <p className="italic text-white opacity-70">Mechanical Engineer</p>
             <p className="italic text-white opacity-70">Developer</p>
-            <div className="sm:my-3 md:my-10 flex flex-row items-center xl:text-4xl sm:text-xs md:text-2xl 2xl:text-5xl">
-              <p className="bg-primary lg:p-4 sm:p-2 mr-5 cursor-pointer active:opacity-70">
+            <div className="sm:my-3 md:my-10 flex flex-row items-center xl:text-xl lg:text-base sm:text-xs md:text-2xl 2xl:text-5xl">
+              <p className="bg-primary xl:p-2 sm:p-2 mr-5 cursor-pointer active:opacity-70">
                 HIRE ME
               </p>
               <p className="hover:cursor-pointer active:opacity-70">Resumé</p>
@@ -45,18 +45,18 @@ function Details() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-secondary h-[25%] self-end p-10 px-20 flex-row flex justify-between items-center">
-        <div className="lg:text-lg sm:text-xs xl:text-2xl 2xl:text-4xl">
+      <div className="w-full bg-secondary h-[25%] self-end p-10 xl:px-20 sm:px-14 flex-row flex justify-between items-center">
+        <div className="lg:text-lg sm:text-xs xl:text-xl 2xl:text-4xl">
           <p className="text-white font-semibold">TepDev</p>
           <p className="text-white font-semibold">Services</p>
-          <p className="sm:my-1 my-4 text-white opacity-40 cursor-pointer active:opacity-30">
+          <p className="sm:my-1 my-4 text-white xl:text-sm sm:text-[8px] opacity-40 cursor-pointer active:opacity-30">
             VISIT US
           </p>
         </div>
-        <div className="flex flex-row justify-around lg:text-3xl xl:text-6xl">
-          <FaFacebook className="hover:cursor-pointer text-black active:text-accent mx-3" />
-          <FaTwitter className="hover:cursor-pointer text-black active:text-accent mx-3" />
-          <FaGithub className="hover:cursor-pointer text-black active:text-accent mx-3" />
+        <div className="flex flex-row justify-around lg:text-3xl xl:text-4xl">
+          <FaFacebook className="hover:cursor-pointer text-black hover:text-accent active:opacity-70 xl:mx-3 sm:ms-1" />
+          <FaTwitter className="hover:cursor-pointer text-black hover:text-accent active:opacity-70 xl:mx-3 sm:ms-1" />
+          <FaGithub className="hover:cursor-pointer text-black hover:text-accent active:opacity-70 xl:mx-3 sm:ms-1" />
         </div>
       </div>
     </div>

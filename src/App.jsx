@@ -4,10 +4,12 @@ import MobileNavBar from "./components/MobileNavBar";
 
 function App() {
   const [count, setCount] = useState(0);
-  const [WinSize, setWinSize] = useState();
+  const [WinWidth, setWinWidth] = useState(window.innerWidth);
+  const [WinHeight, setwinHeight] = useState(window.innerHeight);
 
   const handleResize = () => {
-    setWinSize(window.innerWidth);
+    setWinWidth(window.innerWidth);
+    setwinHeight(window.innerHeight);
   };
 
   useEffect(() => {
@@ -21,7 +23,11 @@ function App() {
   return (
     <>
       <div className="flex justify-center flex-row items-center h-screen bg-gradient-to-tr from-background to-blue-950">
-        {WinSize <= 700 ? <MobileNavBar /> : <HomeScreen />}
+        {WinWidth <= 700 || WinHeight > WinWidth ? (
+          <MobileNavBar />
+        ) : (
+          <HomeScreen />
+        )}
       </div>
     </>
   );

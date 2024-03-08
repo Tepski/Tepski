@@ -18,14 +18,19 @@ function NavBar() {
   return (
     <div className="border-b-primary border-b-4 w-full h-[12.5%] justify-between px-20 items-center flex flex-row">
       <div className="bg-white rounded-full">
-        <img src={Logo} style={{ height: 70, aspectRatio: 1 }} alt="" />
+        <img
+          src={Logo}
+          // style={{ height: 70, aspectRatio: 1 }}
+          className="xl:h-[70px] 2xl:h-24 lg:h-8 sm:h-8  aspect-square"
+          alt=""
+        />
       </div>
       <div className="flex flex-row">
         {navBarItems.map((item, index) => {
           return (
             <div className="px-4" key={index}>
               <p
-                className={`text-text lg:text-lg xl:text-3xl hover:text-primary cursor-pointer active:opacity-70 ${handleSelected(
+                className={`text-text lg:text-sm xl:text-xl sm:text-xs hover:text-primary cursor-pointer active:opacity-70 ${handleSelected(
                   index
                 )}`}
                 onClick={() => setSelected(index)}
@@ -37,7 +42,7 @@ function NavBar() {
         })}
       </div>
       <div>
-        <h2 className="border-text border-2 p-2 lg:text-lg xl:text-2xl text-text hover:text-primary hover:border-primary cursor-pointer active:opacity-70">
+        <h2 className="border-text border-2 xl:p-2 sm:p-1 lg:text-sm xl:text-xl sm:text-[10px] text-text hover:text-primary hover:border-primary cursor-pointer active:opacity-70">
           CONTACT ME!
         </h2>
       </div>
