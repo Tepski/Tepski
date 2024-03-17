@@ -48,7 +48,7 @@ function Details() {
   return (
     <div className="w-1/2 flex justify-center items-center flex-col relative">
       <div className="w-full h-[75%] py-20 ps-20 text-4xl font-extrabold text-white flex justify-center items-center flex-col z-10 relative">
-        <div>
+        <div className="z-10">
           <div className="py-3 lg:text-3xl xl:text-5xl sm:text-lg md:text-xl d2xl:text-7xl">
             <p>
               HI<span className="text-primary">!</span> I am
@@ -69,25 +69,27 @@ function Details() {
             <p className="italic text-white opacity-70 font-extralight">
               Developer
             </p>
-            <div className="sm:my-3 md:my-5 xl:my-10 flex flex-row items-center xl:text-xl lg:text-base sm:text-xs md:text-xs d2xl:text-5xl">
+            <div className="sm:my-3 md:my-5 xl:my-10 flex flex-row items-center xl:text-xl lg:text-base sm:text-[8px] md:text-xs d2xl:text-5xl">
               <a href={Resume} rel="noreferrer noopener" target="_blank">
-                <p className="bg-primary xl:p-2 sm:p-2 d2xl:p-4 mr-1 cursor-pointer active:opacity-70 text-background border-2 border-primary ">
+                <p className="bg-primary xl:p-2 sm:p-1 d2xl:p-4 mr-1 cursor-pointer active:opacity-70 text-background border-2 border-primary ">
                   HIRE ME
                 </p>
               </a>
               <p
-                className="hover:cursor-pointer active:opacity-70 border-2 sm:p-2 d2xl:p-4 font-thin border-primary"
-                onClick={handleDownload}
+                className="hover:cursor-pointer active:opacity-70 border-2 sm:p-1 md:p-2 d2xl:p-4 font-thin border-primary"
+                // onClick={handleDownload}
               >
                 Resumé
               </p>
             </div>
           </div>
         </div>
-        <div className="absolute w-40 h-20 bg-secondary bottom-0 right-0" />
-        <div className="absolute w-40 h-20 bg-background bottom-0 right-0 rounded-br-[100px]" />
+        <div className="z-0">
+          <div className="absolute w-20 h-20 bg-secondary bottom-0 right-0" />
+          <div className="absolute w-20 h-20 bg-background bottom-0 right-0 rounded-br-[100px]" />
+        </div>
       </div>
-      <div className="w-full bg-secondary h-[25%] self-end p-10 xl:px-20 sm:px-14 flex-row flex justify-between items-center rounded-tl-[100px]">
+      <div className="w-full bg-secondary h-[25%] self-end p-10 xl:px-20 sm:px-14 flex-row-reverse flex justify-between items-center rounded-tl-[100px]">
         <div className="lg:text-lg sm:text-xs xl:text-xl d2xl:text-5xl">
           <p className="text-white font-semibold">TepDev</p>
           <p className="text-white font-semibold">Services</p>
