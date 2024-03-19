@@ -27,11 +27,16 @@ function App() {
   return (
     <Router>
       <div className="flex justify-center items-center bg-background flex-col">
-        <div className="w-[80%] h-screen">
+        <div style={{ height: WinHeight }} className="w-[80%]">
           {WinWidth >= 735 ? (
             <div>
-              <NavBar />
-              <div className="flex h-[87.5%] justify-center">
+              <div style={{ height: WinHeight * 0.125 }}>
+                <NavBar />
+              </div>
+              <div
+                style={{ height: WinHeight * 0.875 }}
+                className="flex justify-center bg-background"
+              >
                 <Routes>
                   <Route element={<HomeScreen />} path="/Tepski" />
                   <Route element={<About />} path="/Tepski/About" />

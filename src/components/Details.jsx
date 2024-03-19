@@ -15,21 +15,16 @@ function Details() {
   ];
 
   const handleDownload = () => {
-    // Create a URL for the file
-    const fileUrl = Resume; // Replace with your file URL
+    const fileUrl = Resume;
 
-    // Create an anchor element
     const link = document.createElement("a");
     link.href = fileUrl;
-    link.setAttribute("download", "JosephLadrillonoResume.pdf"); // Set the desired file name
+    link.setAttribute("download", "JosephLadrillonoResume.pdf");
 
-    // Append the anchor to the body
     document.body.appendChild(link);
 
-    // Trigger the download
     link.click();
 
-    // Clean up - remove the anchor from the body
     document.body.removeChild(link);
   };
 
@@ -77,7 +72,7 @@ function Details() {
               </a>
               <p
                 className="hover:cursor-pointer active:opacity-70 border-2 sm:p-1 md:p-2 d2xl:p-4 font-thin border-primary"
-                // onClick={handleDownload}
+                onClick={handleDownload}
               >
                 Resumé
               </p>

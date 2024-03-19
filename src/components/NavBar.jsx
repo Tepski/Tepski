@@ -17,13 +17,12 @@ function NavBar() {
   ];
 
   return (
-    <div className="border-b-primary border-b-4 bg-background w-full h-[12.5%] justify-between px-20 items-center flex flex-row">
+    <div className="border-b-primary border-b-4 py-2 bg-background w-full justify-between px-20 items-center flex flex-row">
       <div className="bg-white rounded-full">
         <img
           src={Logo}
-          // style={{ height: 70, aspectRatio: 1 }}
-          className="xl:h-[70px] 2xl:h-18 lg:h-8 sm:h-8 aspect-square"
-          alt=""
+          className="xl:h-[60px] 2xl:h-18 lg:h-8 sm:h-8 aspect-square"
+          alt="TepDev Logo"
         />
       </div>
       <div className="flex flex-row">
