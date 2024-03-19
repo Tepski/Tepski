@@ -26,7 +26,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex justify-center items-center bg-background flex-col">
+      <div className="flex w-screen justify-center items-center bg-background flex-col">
         <div style={{ height: WinHeight }} className="w-[80%]">
           {WinWidth >= 735 ? (
             <div>

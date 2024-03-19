@@ -16,3 +16,7 @@ h1:hover {
 h1:active {
     color: brown;
 }
+
+body {
+    background-color: "#06031c";
+}
