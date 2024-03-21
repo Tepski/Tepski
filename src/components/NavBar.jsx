@@ -17,7 +17,7 @@ function NavBar() {
   ];
 
   return (
-    <div className="border-b-primarya border-b-4a py-2 bg-background w-full justify-between px-20 items-center flex flex-row">
+    <div className="border-b-primarya border-b-4a py-2 bg-background w-full justify-between items-center flex flex-row">
       <div className="bg-white rounded-full border-2 border-primary">
         <img
           src={Logo}

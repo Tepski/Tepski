@@ -2,44 +2,63 @@ import React, { useEffect, useState } from "react";
 import Image from "../assets/IMAGE.jpeg";
 import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
+import BluredComponent from "../components/BluredComponent";
+import { FaCircle } from "react-icons/fa";
+import Resume from "../assets/Resume.pdf";
 
 const About = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.7,
-  });
+  const handleDownload = () => {
+    const fileUrl = Resume;
 
-  const [imageRef, imageInView] = useInView({
-    triggerOnce: true,
-    threshold: 1,
-  });
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute("download", "JosephLadrillonoResume.pdf");
 
-  const props = useSpring({
-    from: { transform: "translateY(100%)", opacity: 0 },
-    to: { transform: "translateY(0)", opacity: 1 },
-    config: { duration: 800 },
-  });
+    document.body.appendChild(link);
 
-  const boxAnimate = useSpring({
-    opacity: inView ? 1 : 0,
-    transform: inView ? "translateX(0)" : "translateX(100%)",
-    config: { duration: 800 },
-  });
+    link.click();
 
-  const textAnimate = useSpring({
-    opacity: imageInView ? 1 : 0,
-    config: { duration: 2000 },
-  });
+    document.body.removeChild(link);
+  };
+
+  const AboutText = `I was born in Zambales, Philippines, and I am a Registered
+  Mechanical Engineer with a passion for designing innovative
+  solutions. Alongside my engineering background, I have developed a
+  strong interest in web and mobile development, teaching myself
+  through various projects. `;
+
+  const ForHireText = `I am currently seeking new opportunities to apply my skills and
+  continue learning in a collaborative and innovative environment.
+  #HireMePlease`;
 
   return (
-    <div className=" flex w-full h-full items-start bg-secondary rounded-t-full">
-      <div className="flex w-full flex-col justify-start items-start">
-        <p className="text-text text-8xl font-extrabold">
-          <span className="text-primary">About</span> me
-        </p>
-        <p className="bg-background px-5 py-2 text-base rounded-full text-primary border-2 border-primary hover:opacity-60 active:text-xl hover:cursor-pointer">
-          Download Resumé
-        </p>
+    <div className=" flex w-full h-full items-start bg-secondary rounded-t-full flex-col">
+      <div className="flex w-full flex-row justify-between items-center">
+        <div>
+          <p className="text-text 2xl:text-8xl sm:text-5xl font-extrabold">
+            <span className="text-primary">About</span> me
+          </p>
+          <p
+            onClick={handleDownload}
+            className="bg-background 2xl:px-5 2xl:py-2 sm:px-2 sm:py-1 2xl:text-base sm:text-[10px] rounded-full text-primary 2xl:border-2 sm:border-[1px] border-primary hover:opacity-60 text-center active:text-xl hover:cursor-pointer"
+          >
+            Download Resumé
+          </p>
+        </div>
+        <div>
+          <p className="flex gap-2">
+            STATUS: OPEN FOR WORK
+            <FaCircle className="text-lime-300 text-2xl" />
+          </p>
+        </div>
+      </div>
+      <div className="flex gap-4 my-10 w-full justify-between">
+        <img
+          src={Image}
+          className="xl:h-[330px] 2xl:h-[380px] w-auto rounded-xl border-4 border-primary"
+          alt=""
+        />
+        <BluredComponent text={AboutText} />
       </div>
     </div>
   );

@@ -42,18 +42,18 @@ function Details() {
 
   return (
     <div className="w-1/2 flex justify-center items-center flex-col relative">
-      <div className="w-full h-[75%] py-20 ps-20 pe-0 text-4xl font-extrabold text-white flex justify-center items-center flex-col z-10 relative">
+      <div className="w-full h-[75%] py-20 ps-20s pe-0 text-4xl font-extrabold text-white flex justify-center items-center flex-col z-10 relative">
         <div className="z-10">
           <div className="py-3 text-text lg:text-3xl xl:text-5xl sm:text-lg md:text-xl d2xl:text-7xl">
             <p>
               HI<span className="text-primary">!</span> I am
             </p>
-            <p>
+            <p className="flex  ">
               ENGR.{" "}
               <span
                 style={{
                   color: "white",
-                  WebkitTextStroke: `2px ${selectedColor}`,
+                  WebkitTextStroke: `1px ${selectedColor}`,
                 }}
               >
                 JOSEPH RUSS
@@ -65,8 +65,9 @@ function Details() {
                         top: -16,
                         right: -10,
                         rotate: "32deg",
+                        color: selectedColor,
                       }}
-                      className="text-accent"
+                      className="text-accents"
                     />
                   </span>
                   EL

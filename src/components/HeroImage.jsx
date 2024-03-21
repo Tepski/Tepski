@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowCircleRight, FaEnvelope, FaPhone } from "react-icons/fa";
-import Image from "../assets/image7.png";
+import Image from "../assets/image8.png";
 
 const ArrowIcon = (
   <FaArrowCircleRight className="sm:text-[10px] lg:text-lg s2xl:text-3xl text-background xl:text-xl hover:text-accent hover:cursor-pointer active:opacity-70" />
