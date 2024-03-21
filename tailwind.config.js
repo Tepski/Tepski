@@ -16,12 +16,17 @@ export default {
     },
     extend: {
       colors: {
-        text: "#fbfaff",
-        background: "#06031c",
-        primary: "#a939ea",
-        secondary: "#313706",
-        accent: "#6ae821",
-        black: "#000000",
+        // text: "#fbfaff",
+        // background: "#06031c",
+        // primary: "#a939ea",
+        // secondary: "#313706",
+        // accent: "#6ae821",
+        // black: "#000000",
+        text: "#07030a",
+        background: "#f8f3fc",
+        primary: "#8a2fd4",
+        secondary: "#c086ee",
+        accent: "#a951f1",
       },
       fontSize: {
         "body-lg": "1.125rem",

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaGithub, FaHardHat } from "react-icons/fa";
 import Resume from "../assets/Resume.pdf";
 
 function Details() {
-  const [selectedColor, setSelectedColor] = useState("rgb(255, 255, 255)");
+  const [selectedColor, setSelectedColor] = useState("rgb(0, 0, 0)");
 
   const IconList = [
     { icon: <FaGithub />, link: "https://www.github.com/Tepski" },
@@ -42,27 +42,44 @@ function Details() {
 
   return (
     <div className="w-1/2 flex justify-center items-center flex-col relative">
-      <div className="w-full h-[75%] py-20 ps-20 text-4xl font-extrabold text-white flex justify-center items-center flex-col z-10 relative">
+      <div className="w-full h-[75%] py-20 ps-20 pe-0 text-4xl font-extrabold text-white flex justify-center items-center flex-col z-10 relative">
         <div className="z-10">
-          <div className="py-3 lg:text-3xl xl:text-5xl sm:text-lg md:text-xl d2xl:text-7xl">
+          <div className="py-3 text-text lg:text-3xl xl:text-5xl sm:text-lg md:text-xl d2xl:text-7xl">
             <p>
               HI<span className="text-primary">!</span> I am
             </p>
-            <p className="">
+            <p>
               ENGR.{" "}
               <span
-                style={{ color: selectedColor, textDecoration: "underline" }}
+                style={{
+                  color: "white",
+                  WebkitTextStroke: `2px ${selectedColor}`,
+                }}
               >
-                JOSEPH RUSSEL
+                JOSEPH RUSS
+                <span className="relative">
+                  <span>
+                    <FaHardHat
+                      style={{
+                        position: "absolute",
+                        top: -16,
+                        right: -10,
+                        rotate: "32deg",
+                      }}
+                      className="text-accent"
+                    />
+                  </span>
+                  EL
+                </span>
               </span>
             </p>
           </div>
-          <div className="lg:text-sm xl:text-xl sm:text-xs d2xl:text-3xl">
-            <p className="italic text-white opacity-70 font-extralight">
+          <div className="lg:text-sm xl:text-xl text-text sm:text-xs d2xl:text-3xl">
+            <p className="italic text-whitea text-text opacity-70 font-extralight">
               Licensed Mechanical Engineer
             </p>
-            <p className="italic text-white opacity-70 font-extralight">
-              Developer
+            <p className="italic text-whitea text-text opacity-70 font-extralight">
+              {"<Developer />"}
             </p>
             <div className="sm:my-3 md:my-5 xl:my-10 flex flex-row items-center xl:text-xl lg:text-base sm:text-[8px] md:text-xs d2xl:text-5xl">
               <a href={Resume} rel="noreferrer noopener" target="_blank">
@@ -70,12 +87,12 @@ function Details() {
                   HIRE ME
                 </p>
               </a>
-              <p
+              {/* <p
                 className="hover:cursor-pointer active:opacity-70 border-2 sm:p-1 md:p-2 d2xl:p-4 font-thin border-primary"
                 onClick={handleDownload}
               >
                 Resumé
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

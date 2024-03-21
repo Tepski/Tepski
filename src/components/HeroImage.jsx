@@ -9,12 +9,12 @@ const ArrowIcon = (
 function HeroImage() {
   const IconList = [
     {
-      icon: <FaPhone className="text-background" />,
+      icon: <FaPhone className="text-primary" />,
       content: "+639 991 403 4706",
       arrow: ArrowIcon,
     },
     {
-      icon: <FaEnvelope className="text-background" />,
+      icon: <FaEnvelope className="text-primary" />,
       content: "ladrillonojosephrussel@gmail.com",
       arrow: (
         <a href={`mailto:${"ladrillonojosephrussel@gmail.com"}`}>{ArrowIcon}</a>
@@ -38,7 +38,7 @@ function HeroImage() {
               <div className="sm:text-[10px] lg:text-lg xl:text-xl s2xl:text-3xl">
                 {item.icon}
               </div>
-              <p className="px-2 text-background sm:text-xs lg:text-base xl:text-lg s2xl:text-3xl font-extralight">
+              <p className="px-2 text-black/75 sm:text-xs lg:text-base xl:text-lg s2xl:text-3xl font-extralight">
                 {item.content}
               </p>
               {item.arrow}
