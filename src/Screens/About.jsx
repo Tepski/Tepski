@@ -1,27 +1,30 @@
 import React, { useEffect, useState } from "react";
-import Image from "../assets/IMAGE.jpeg";
+import Image from "../assets/IMAGE-w-tape.png";
 import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 import BluredComponent from "../components/BluredComponent";
-import { FaCircle } from "react-icons/fa";
+import { FaCircle, FaCaretDown } from "react-icons/fa";
 import Resume from "../assets/Resume.pdf";
+import Blob from "../assets/Blob.png";
+import circle from "../assets/circle.svg";
 
 const About = () => {
   const handleDownload = () => {
-    const fileUrl = Resume;
+    // const fileUrl = Resume;
 
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.setAttribute("download", "JosephLadrillonoResume.pdf");
+    // const link = document.createElement("a");
+    // link.href = fileUrl;
+    // link.setAttribute("download", "JosephLadrillonoResume.pdf");
 
-    document.body.appendChild(link);
+    // document.body.appendChild(link);
 
-    link.click();
+    // link.click();
 
-    document.body.removeChild(link);
+    // document.body.removeChild(link);
+    alert("DOWNLOADED");
   };
 
-  const AboutText = `I was born in Zambales, Philippines, and I am a Registered
+  const AboutText = `I am Joseph Russel Ladrillono, I was born in Zambales, Philippines, and I am a Registered
   Mechanical Engineer with a passion for designing innovative
   solutions. Alongside my engineering background, I have developed a
   strong interest in web and mobile development, teaching myself
@@ -32,33 +35,57 @@ const About = () => {
   #HireMePlease`;
 
   return (
-    <div className=" flex w-full h-full items-start bg-secondary rounded-t-full flex-col">
-      <div className="flex w-full flex-row justify-between items-center">
-        <div>
-          <p className="text-text 2xl:text-8xl sm:text-5xl font-extrabold">
-            <span className="text-primary">About</span> me
-          </p>
-          <p
-            onClick={handleDownload}
-            className="bg-background 2xl:px-5 2xl:py-2 sm:px-2 sm:py-1 2xl:text-base sm:text-[10px] rounded-full text-primary 2xl:border-2 sm:border-[1px] border-primary hover:opacity-60 text-center active:text-xl hover:cursor-pointer"
-          >
-            Download Resumé
-          </p>
+    <div
+      className="flex w-full h-full items-start bg-secondaryrounded-t-full pt-4 flex-col bg-contain"
+      style={{
+        backgroundImage: `url(${Blob})`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        // backgroundSize: "50%",
+      }}
+    >
+      <div className="w-full h-full justify-items-center overflow-y-scroll place-items-center pe-4 bg-balack/50">
+        <div className="flex w-full flex-row justify-between items-center">
+          <div className="flex justify-between flex-row items-center w-full">
+            <p className="text-text 2xl:text-6xl sm:text-2xl font-extrabold">
+              <span className="text-primary ">About</span> me
+            </p>
+            <p
+              onClick={handleDownload}
+              className="bg-background flex 2xl:px-5 2xl:py-2 sm:px-3 sm:py-1.5 2xl:text-base sm:text-[10px] rounded-full text-primary 2xl:border-2 sm:border-[1px] border-primary hover:opacity-60 active:text-purple-300 hover:cursor-pointer"
+            >
+              Download Resumé
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="flex gap-2">
-            STATUS: OPEN FOR WORK
-            <FaCircle className="text-lime-300 text-2xl" />
-          </p>
+        <div className="flex justify-evenly items-center my-2 w-full mt-0 py-4 rounded-3xl px-14">
+          <div className="flex relative w-1/2 justify-center">
+            <img
+              src={Image}
+              className="w-auto 2xl:h-[420px] sm:h-48 self-center rotate-6"
+            />
+          </div>
+          <div className="flex 2xl:text-xl sm:text-xs w-1/2 flex-col px-10">
+            <p className="2xl:text-3xl sm:text-base font-extrabold text-center">
+              <span className="text-accent">Who</span> Am I?
+            </p>
+            <p className="text-center font-extrabold 2xl:text-4xl sm:text-lg 2xl:pb-5 sm:pb-2 2xl:py-2 sm:py-0 border-b-4 border-b-primary border-dashed">
+              I'm <span className="text-accent">JOSEPH</span> RUSSEL
+            </p>
+            <p className="text-center 2xl:py-5 sm:py-2">
+              I was born in Zambales, Philippines, and I am a Registered
+              Mechanical Engineer with a passion for designing innovative
+              solutions. Alongside my engineering background, I have developed a
+              strong interest in web and mobile development, teaching myself
+              through various projects.
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="flex gap-4 my-10 w-full justify-between">
-        <img
-          src={Image}
-          className="xl:h-[330px] 2xl:h-[380px] w-auto rounded-xl border-4 border-primary"
-          alt=""
-        />
-        <BluredComponent text={AboutText} />
+        {/* <div className="flex w-full justify-center items-center">
+          <p className="bg-accent px-4 py-2 2xl:text-2xl shadow-md shadow-black sm:text-sm text-background hover:opacity-70 hover:cursor-pointer active:opacity-90 flex flex-row items-center gap-2 sm:py-1 rounded-full z-30">
+            Show more <FaCaretDown size={20} />
+          </p>
+        </div> */}
       </div>
     </div>
   );

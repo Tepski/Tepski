@@ -10,16 +10,13 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-secondary h-full w-full rounded-tl-full rounded-tr-[4500px] flex justify-center items-center flex-col">
+    <div className="bg-secondary h-full w-full rounded-tl-full rounded-tr-[4500px] flex justify-center items-center flex-col my-5">
       <div className="mb-2 flex justify-between w-full items-center">
-        <p className="text-text text-8xl font-extrabold">
+        <p className="text-text 2xl:text-8xl sm:text-5xl font-extrabold">
           My <span className="text-primary">Services</span>
         </p>
-        <p className="bg-transparent border-2 border-primary rounded-full px-4 py-2 text-2xl">
-          Read More{" "}
-          <span className="p-2 bg-primary h-full aspect-square text-white rounded-full">
-            {">"}
-          </span>
+        <p className="bg-transparent border-2 border-primary rounded-full px-4 py-2 2xl:text-2xl sm:text-sm">
+          Read More
         </p>
       </div>
       <div className="flex h-full justify-center gap-20 w-full">

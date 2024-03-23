@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebook, FaLinkedin, FaGithub, FaHardHat } from "react-icons/fa";
-import Resume from "../assets/Resume.pdf";
 
 function Details() {
   const [selectedColor, setSelectedColor] = useState("rgb(0, 0, 0)");
@@ -13,20 +12,6 @@ function Details() {
       link: "https://www.linkedin.com/in/josephrusselladrillono/",
     },
   ];
-
-  const handleDownload = () => {
-    const fileUrl = Resume;
-
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.setAttribute("download", "JosephLadrillonoResume.pdf");
-
-    document.body.appendChild(link);
-
-    link.click();
-
-    document.body.removeChild(link);
-  };
 
   const RandomColorSelector = () => {
     const randomNumber = Math.floor(Math.random() * 255);
@@ -83,7 +68,7 @@ function Details() {
               {"<Developer />"}
             </p>
             <div className="sm:my-3 md:my-5 xl:my-10 flex flex-row items-center xl:text-xl lg:text-base sm:text-[8px] md:text-xs d2xl:text-5xl">
-              <a href={Resume} rel="noreferrer noopener" target="_blank">
+              <a rel="noreferrer noopener" target="_blank">
                 <p className="bg-primary xl:p-2 sm:p-1 d2xl:p-4 mr-1 cursor-pointer active:opacity-70 text-background border-2 border-primary ">
                   HIRE ME
                 </p>

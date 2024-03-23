@@ -17,8 +17,8 @@ function NavBar() {
   ];
 
   return (
-    <div className="border-b-primarya border-b-4a py-2 bg-background w-full justify-between items-center flex flex-row">
-      <div className="bg-white rounded-full border-2 border-primary">
+    <div className="border-b-primarya border-b-4a px-10 py-2 bg-background w-full justify-between items-center flex flex-row border-b-2 border-b-primary">
+      <div className="bg-background rounded-full border-2 border-primary">
         <img
           src={Logo}
           className="xl:h-[60px] 2xl:h-18 lg:h-8 sm:h-8 aspect-square"
@@ -46,7 +46,7 @@ function NavBar() {
         })}
       </div>
       <div>
-        <h2 className="rounded-full text-white border-2 border-primary bg-primary xl:p-2 sm:p-1 lg:text-sm xl:text-xl d2xl:text-d2xl sm:text-[10px] hover:text-primary hover:bg-background cursor-pointer active:opacity-70">
+        <h2 className="rounded-full text-white border-2 border-primary bg-primary px-4 py-1.5 lg:text-sm xl:text-xl d2xl:text-d2xl sm:text-[10px] hover:text-primary hover:bg-background cursor-pointer active:opacity-70">
           CONTACT ME!
         </h2>
       </div>
