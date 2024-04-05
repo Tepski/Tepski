@@ -30,7 +30,7 @@ function App() {
         className="flex w-screen justify-center items-center bg-background flex-col"
         sty={{}}
       >
-        <div style={{ height: WinHeight }} className="w-[90%]">
+        <div style={{ height: WinHeight }} className="w-[80%]">
           {WinWidth >= 735 ? (
             <div>
               <div style={{ height: WinHeight * 0.125 }}>

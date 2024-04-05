@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebook, FaLinkedin, FaGithub, FaHardHat } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 
 function Details() {
   const [selectedColor, setSelectedColor] = useState("rgb(0, 0, 0)");
@@ -24,6 +25,10 @@ function Details() {
       setSelectedColor(colorText);
     }, 800);
   }, []);
+
+  const handleHireMe = () => {
+    alert("Uy legit ba? Haha thanks boss");
+  };
 
   return (
     <div className="w-1/2 flex justify-center items-center flex-col relative">
@@ -61,14 +66,30 @@ function Details() {
             </p>
           </div>
           <div className="lg:text-sm xl:text-xl text-text sm:text-xs d2xl:text-3xl">
-            <p className="italic text-whitea text-text opacity-70 font-extralight">
+            {/* <p className="italic text-whitea text-text opacity-70 font-extralight">
               Licensed Mechanical Engineer
-            </p>
-            <p className="italic text-whitea text-text opacity-70 font-extralight">
+            </p> */}
+            <TypeAnimation
+              sequence={[
+                "Licensed Mechanical Engineer",
+                1000,
+                "Web Developer",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              className="italic text-whitea text-text opacity-70 font-extralight"
+              repeat={Infinity}
+            />
+            {/* <p className="italic text-whitea text-text opacity-70 font-extralight">
               {"<Developer />"}
-            </p>
+            </p> */}
             <div className="sm:my-3 md:my-5 xl:my-10 flex flex-row items-center xl:text-xl lg:text-base sm:text-[8px] md:text-xs d2xl:text-5xl">
-              <a rel="noreferrer noopener" target="_blank">
+              <a
+                rel="noreferrer noopener"
+                onClick={handleHireMe}
+                target="_blank"
+              >
                 <p className="bg-primary xl:p-2 sm:p-1 d2xl:p-4 mr-1 cursor-pointer active:opacity-70 text-background border-2 border-primary ">
                   HIRE ME
                 </p>

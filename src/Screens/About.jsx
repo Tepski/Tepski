@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Image from "../assets/IMAGE-w-tape.png";
 import { useSpring, animated } from "react-spring";
-import { useInView } from "react-intersection-observer";
-import BluredComponent from "../components/BluredComponent";
-import { FaCircle, FaCaretDown } from "react-icons/fa";
+import Education from "../components/Education";
+import { FaCaretDown } from "react-icons/fa";
 import Resume from "../assets/Resume.pdf";
 import Blob from "../assets/Blob.png";
-import circle from "../assets/circle.svg";
 
 const About = () => {
   const handleDownload = () => {
@@ -46,7 +44,7 @@ const About = () => {
     >
       <div className="w-full h-full justify-items-center overflow-y-scroll place-items-center pe-4 bg-balack/50">
         <div className="flex w-full flex-row justify-between items-center">
-          <div className="flex justify-between flex-row items-center w-full">
+          <div className="flex h-full justify-between flex-row items-center w-full">
             <p className="text-text 2xl:text-6xl sm:text-2xl font-extrabold">
               <span className="text-primary ">About</span> me
             </p>
@@ -81,11 +79,9 @@ const About = () => {
             </p>
           </div>
         </div>
-        {/* <div className="flex w-full justify-center items-center">
-          <p className="bg-accent px-4 py-2 2xl:text-2xl shadow-md shadow-black sm:text-sm text-background hover:opacity-70 hover:cursor-pointer active:opacity-90 flex flex-row items-center gap-2 sm:py-1 rounded-full z-30">
-            Show more <FaCaretDown size={20} />
-          </p>
-        </div> */}
+        <div>
+          <Education />
+        </div>
       </div>
     </div>
   );

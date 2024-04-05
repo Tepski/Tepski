@@ -12,7 +12,7 @@ function NavBar() {
   const navBarItems = [
     { title: "Home", link: "/Tepski" },
     { title: "About", link: "/Tepski/About" },
-    { title: "Pojects", link: "/Tepski/Projects" },
+    { title: "Projects", link: "/Tepski/Projects" },
     { title: "Services", link: "/Tepski/Services" },
   ];
 
