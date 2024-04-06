@@ -34,7 +34,7 @@ const About = () => {
 
   return (
     <div
-      className="flex w-full h-full items-start bg-secondaryrounded-t-full pt-4 flex-col bg-contain"
+      className="flex w-full h-full items-start bg-secondaryrounded-t-full flex-col bg-contain"
       style={{
         backgroundImage: `url(${Blob})`,
         backgroundPosition: "center",
@@ -50,7 +50,7 @@ const About = () => {
             </p>
             <p
               onClick={handleDownload}
-              className="bg-background flex 2xl:px-5 2xl:py-2 sm:px-3 sm:py-1.5 2xl:text-base sm:text-[10px] rounded-full text-primary 2xl:border-2 sm:border-[1px] border-primary hover:opacity-60 active:text-purple-300 hover:cursor-pointer"
+              className="bg-background flex 2xl:px-5 2xl:py-2 sm:px-3 sm:py-1.5 2xl:text-sm sm:text-[10px] rounded-full text-primary 2xl:border-2 sm:border-[1px] border-primary hover:opacity-60 active:text-purple-300 hover:cursor-pointer"
             >
               Download Resumé
             </p>
