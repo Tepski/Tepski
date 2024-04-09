@@ -60,7 +60,7 @@ const About = () => {
           <div className="flex relative w-1/2 justify-center">
             <img
               src={Image}
-              className="w-auto 2xl:h-[420px] sm:h-48 self-center rotate-6"
+              className="w-auto 2xl:h-96 sm:h-48 self-center rotate-6"
             />
           </div>
           <div className="flex 2xl:text-xl sm:text-xs w-1/2 flex-col px-10">
