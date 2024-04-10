@@ -10,7 +10,7 @@ const Education = () => {
       </p>
       <div className="">
         <div className="gap-2 flex my-4">
-          <div className=" h-64 w-[70%] px-5 py-5 relative bg-gray-400/50 rounded-3xl shadow-lg shadow-black/80">
+          <div className=" h-64 w-[70%] px-5 py-5 relative bg-primary/50 rounded-3xl shadow-lg shadow-black/80">
             <div className="z-40">
               <div className="flex w-full justify-between">
                 <p className="text-primary italic">Bachelor's Degree</p>
@@ -37,7 +37,7 @@ const Education = () => {
         </div>
         <div className="gap-2 flex my-4">
           <div className="bg-gray-400 rounded-3xl h-64 w-[30%] shadow-lg shadow-black/80" />
-          <div className=" h-64 w-[70%] px-5 py-5 relative bg-gray-400/50 rounded-3xl shadow-lg shadow-black/80">
+          <div className=" h-64 w-[70%] px-5 py-5 relative bg-primary/50 rounded-3xl shadow-lg shadow-black/80">
             <div className="z-40">
               <div className="flex w-full justify-between">
                 <p className="text-primary underline-offset-4 underline italic">
@@ -57,7 +57,7 @@ const Education = () => {
           </div>
         </div>
         <div className="gap-2 flex my-4">
-          <div className=" h-64 w-[70%] px-5 py-5 relative bg-gray-400/50 rounded-3xl shadow-lg shadow-black/80">
+          <div className=" h-64 w-[70%] px-5 py-5 relative bg-primary/50 rounded-3xl shadow-lg shadow-black/80">
             <div className="z-40">
               <div className="flex w-full justify-between">
                 <p className="text-primary italic">Junior High School</p>
@@ -77,11 +77,11 @@ const Education = () => {
         </div>
         <div className="gap-2 flex my-4">
           <div className="bg-gray-400 rounded-3xl h-64 w-[30%] shadow-lg shadow-black/80" />
-          <div className=" h-64 w-[70%] px-5 py-5 relative bg-gray-400/50 rounded-3xl shadow-lg shadow-black/80">
+          <div className=" h-64 w-[70%] px-5 py-5 relative bg-primary/50 rounded-3xl shadow-lg shadow-black/80">
             <div className="z-40">
               <div className="flex w-full justify-between">
                 <p className="text-primary italic">Elementary Education</p>
-                <p className="text-primary italic">2005 - 2012</p>
+                <p className="text-primary italic">2007 - 2012</p>
               </div>
               <p className="text-4xl text-center py-10 font-extrabold">
                 <span className="text-primary">{"<"}---</span>
