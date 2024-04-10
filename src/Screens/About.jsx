@@ -56,7 +56,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-evenly items-center my-2 w-full mt-0 py-4 rounded-3xl px-14">
+        <div className="flex justify-center items-center w-full h-full mt-0 rounded-3xl px-14">
           <div className="flex relative w-1/2 justify-center">
             <img
               src={Image}

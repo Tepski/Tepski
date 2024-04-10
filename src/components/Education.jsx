@@ -31,7 +31,7 @@ const Education = () => {
               src={Prmsu}
               className="absolute container hover:scale-150 transition opacity-70 hover:opacity-100 ease-in-out duration-1000"
               alt=""
-              srcset=""
+              srcSet=""
             />
           </div>
         </div>
@@ -40,9 +40,7 @@ const Education = () => {
           <div className=" h-64 w-[70%] px-5 py-5 relative bg-primary/50 rounded-3xl shadow-lg shadow-black/80">
             <div className="z-40">
               <div className="flex w-full justify-between">
-                <p className="text-primary underline-offset-4 underline italic">
-                  Senior High School
-                </p>
+                <p className="text-primary italic">Senior High School</p>
                 <p className="text-primary italic">2017 - 2018</p>
               </div>
               <p className="text-4xl text-center py-10 font-extrabold">
