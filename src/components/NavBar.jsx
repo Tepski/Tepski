@@ -25,13 +25,13 @@ function NavBar() {
           alt="TepDev Logo"
         />
       </div>
-      <div className="flex flex-row">
+      <ul className="flex flex-row">
         {navBarItems.map((item, index) => {
           return (
-            <div className="px-4" key={index}>
-              <Link to={item.link}>
+            <li>
+              <Link to={item.link} key={index}>
                 <p
-                  className={`text-text lg:text-sm xl:text-xl d2xl:text-3xl sm:text-xs hover:text-primary cursor-pointer active:opacity-70 ${handleSelected(
+                  className={`text-text mx-4 lg:text-sm xl:text-xl d2xl:text-3xl sm:text-xs hover:text-primary cursor-pointer active:opacity-70 ${handleSelected(
                     index
                   )}`}
                   onClick={() => {
@@ -41,10 +41,10 @@ function NavBar() {
                   {item.title.toUpperCase()}
                 </p>
               </Link>
-            </div>
+            </li>
           );
         })}
-      </div>
+      </ul>
       <div>
         <h2 className="rounded-full text-white border-2 border-primary bg-primary px-4 py-1.5 lg:text-sm xl:text-xl d2xl:text-d2xl sm:text-[10px] hover:text-primary hover:bg-background cursor-pointer active:opacity-70">
           CONTACT ME!
